@@ -4,16 +4,19 @@ type URLInputProps = {
     handleChange: (e: React.ChangeEvent<HTMLInputElement>) => void
     handleGenerate: (e: React.KeyboardEvent<HTMLInputElement>) => void
     inputURL: string
+    placeholder: string
 }
 
 const URLInput: FC<URLInputProps> = ({
     handleChange,
     handleGenerate,
     inputURL,
+    placeholder,
 }) => {
     return (
         <>
             <label
+                id="urlLabel"
                 htmlFor="urlInput"
                 className="pt-4 pb-2 lg:text-lg sm:text-md text-sm m-auto"
             >
@@ -27,9 +30,11 @@ const URLInput: FC<URLInputProps> = ({
                 hover:cursor-text hover:bg-zinc-200"
                 onChange={handleChange}
                 onKeyDown={handleGenerate}
+                placeholder={placeholder}
                 value={inputURL}
                 title={inputURL}
                 autoFocus
+                aria-labelledby="urlLabel"
             />
         </>
     )

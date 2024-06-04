@@ -60,6 +60,7 @@ const App = () => {
                     handleChange={handleChange}
                     inputURL={inputURL}
                     handleGenerate={handleGenerateEnter}
+                    placeholder="https://google.com"
                 />
                 <div
                     className={`mt-4 mb-2 w-1/2 mx-auto aspect-square ${
