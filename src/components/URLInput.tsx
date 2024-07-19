@@ -18,7 +18,7 @@ const URLInput: FC<URLInputProps> = ({
             <label
                 id="urlLabel"
                 htmlFor="urlInput"
-                className="pt-4 pb-2 lg:text-lg sm:text-md text-sm m-auto"
+                className="pt-2 pb-2 lg:text-lg sm:text-md text-sm m-auto"
             >
                 Paste your URL here:
             </label>
