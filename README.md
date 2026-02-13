@@ -1,4 +1,4 @@
-# Ad QR Code Generator
+# QR Code Generator
 
 ## Generate a new QR Code in seconds.
 
