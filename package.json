@@ -1,6 +1,6 @@
 {
     "name": "qr-code-generator",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "private": true,
     "dependencies": {
         "@types/node": "^22.19.1",
