@@ -1,7 +1,7 @@
 {
     "name": "QR Code Generator",
     "manifest_version": 3,
-    "version": "1.0.0",
+    "version": "1.0.2",
     "description": "Generate a new QR Code in seconds with this Chrome extension.",
     "author": "Michael Münzenhofer",
     "icons": {
