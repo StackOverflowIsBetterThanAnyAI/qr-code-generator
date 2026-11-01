@@ -29,13 +29,17 @@ const App = () => {
         generateQRCode()
     }
     const handleGenerateEnter = (e: React.KeyboardEvent<HTMLInputElement>) => {
-        if (e.key === 'Enter') generateQRCode()
+        if (e.key === 'Enter' && inputURL.length) {
+            generateQRCode()
+        }
     }
 
     const generateQRCode = async () => {
         try {
             const url = await getFetchQRCode(inputURL)
-            if (!url.length) throw new Error()
+            if (!url.length) {
+                throw new Error()
+            }
             setImgSrc(url)
             setCurrentURL(inputURL)
             setDownloadEnabled(true)
@@ -63,8 +67,10 @@ const App = () => {
                     placeholder="https://google.com"
                 />
                 <div
-                    className={`mt-4 mb-2 w-1/2 mx-auto aspect-square ${
-                        !imgLoaded && 'bg-zinc-200 animate-pulse rounded-lg'
+                    className={`mt-4 w-1/2 mx-auto aspect-square ${
+                        imgLoaded
+                            ? 'mb-2'
+                            : 'bg-zinc-200 animate-pulse rounded-lg mb-8'
                     }`}
                 >
                     {imgSrc && (
