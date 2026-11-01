@@ -40,5 +40,9 @@
     "overrides": {
         "nth-check": ">=2.0.1",
         "postcss": ">=8.4.31"
+    },
+    "allowScripts": {
+        "core-js@3.37.1": true,
+        "core-js-pure@3.37.1": true
     }
 }
