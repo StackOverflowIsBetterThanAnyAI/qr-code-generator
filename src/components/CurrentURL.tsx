@@ -7,7 +7,7 @@ type CurrentURLProps = {
 const CurrentURL: FC<CurrentURLProps> = ({ currentURL }) => {
     return (
         <p className="flex m-auto pb-4 lg:text-xl sm:text-lg text-md">
-            {currentURL}
+            {currentURL || ' '}
         </p>
     )
 }
