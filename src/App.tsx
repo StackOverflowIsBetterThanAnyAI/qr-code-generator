@@ -29,7 +29,7 @@ const App = () => {
         generateQRCode()
     }
     const handleGenerateEnter = (e: React.KeyboardEvent<HTMLInputElement>) => {
-        if (e.key === 'Enter' && inputURL.length) {
+        if (e.key === 'Enter' && generateEnabled) {
             generateQRCode()
         }
     }
