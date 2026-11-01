@@ -10,7 +10,7 @@ const ErrorMessage: FC<ErrorMessageProps> = ({ errorAPI, errorDownload }) => {
         <>
             {errorAPI && (
                 <div className="flex m-auto text-red-600 bg-zinc-50 mt-4 px-2 rounded-sm lg:text-xl sm:text-lg text-md">
-                    Error fetching the API!
+                    Error while requesting the QR Code!
                 </div>
             )}
             {errorDownload && (
