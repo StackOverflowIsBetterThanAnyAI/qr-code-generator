@@ -64,7 +64,7 @@ const App = () => {
                 />
                 <div
                     className={`mt-4 mb-2 w-1/2 mx-auto aspect-square ${
-                        !imgLoaded && 'bg-zinc-200 animate-pulse rounded-md'
+                        !imgLoaded && 'bg-zinc-200 animate-pulse rounded-lg'
                     }`}
                 >
                     {imgSrc && (
